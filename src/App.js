@@ -1,8 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+//import logo from './logo.svg';
 import './App.css';
+import SinhVien from './components/SinhVien/SinhVien';
 
-function App() {
+
+
+
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +26,20 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <h1>Phan Văn Hoà</h1>
+        <p>Đang học</p>
+        <SinhVien hoten = "Phan Văn Hoà" tuoi = "19">
+          Sở Thích: Bóng đá, Chơi Game, Chân lí trong tim tôi,...
+        </SinhVien>
+        
+      </div>
+    );
+  }
+}
 export default App;
